@@ -389,5 +389,18 @@
 
   
 
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    new Valine(Object.assign({
+      el         : '#valine-comments',
+      path       : location.pathname,
+    }, {"enable":true,"appId":"buw1halb7MoMhsBKDp2JFSIg-MdYXbMMI","appKey":"7NsFjqeqJBJdx57Ev46BS5ro","notify":false,"verify":false,"placeholder":"有什么想和我说的吗？(●'◡'●)","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"language":"zh-CN","visitor":false,"comment_count":true,"recordIP":false,"serverURLs":null}
+    ));
+  }, window.Valine);
+});
+</script>
+
 </body>
 </html>

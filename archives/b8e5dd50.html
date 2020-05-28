@@ -30,10 +30,10 @@
 <meta property="article:published_time" content="2019-12-22T13:17:00.000Z">
 <meta property="article:modified_time" content="2020-05-27T22:24:11.381Z">
 <meta property="article:author" content="两根草">
-<meta property="article:tag" content="Lodge 49">
 <meta property="article:tag" content="TV">
-<meta property="article:tag" content="Brockmire">
 <meta property="article:tag" content="Corporate">
+<meta property="article:tag" content="Lodge 49">
+<meta property="article:tag" content="Brockmire">
 <meta property="article:tag" content="Mr. Robot">
 <meta property="article:tag" content="Succession">
 <meta name="twitter:card" content="summary">
@@ -217,6 +217,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="查看评论" href="/archives/b8e5dd50.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/archives/b8e5dd50.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -276,10 +290,10 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Lodge-49/" rel="tag"># Lodge 49</a>
               <a href="/tags/TV/" rel="tag"># TV</a>
-              <a href="/tags/Brockmire/" rel="tag"># Brockmire</a>
               <a href="/tags/Corporate/" rel="tag"># Corporate</a>
+              <a href="/tags/Lodge-49/" rel="tag"># Lodge 49</a>
+              <a href="/tags/Brockmire/" rel="tag"># Brockmire</a>
               <a href="/tags/Mr-Robot/" rel="tag"># Mr. Robot</a>
               <a href="/tags/Succession/" rel="tag"># Succession</a>
           </div>
@@ -309,6 +323,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -477,6 +492,19 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    new Valine(Object.assign({
+      el         : '#valine-comments',
+      path       : location.pathname,
+    }, {"enable":true,"appId":"buw1halb7MoMhsBKDp2JFSIg-MdYXbMMI","appKey":"7NsFjqeqJBJdx57Ev46BS5ro","notify":false,"verify":false,"placeholder":"有什么想和我说的吗？(●'◡'●)","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"language":"zh-CN","visitor":false,"comment_count":true,"recordIP":false,"serverURLs":null}
+    ));
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>
